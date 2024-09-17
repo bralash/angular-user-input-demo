@@ -1,1 +1,16 @@
-<p>form-array works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div formArrayName="items">
+    <div *ngFor="let item of itemsFormArray.controls; let i = index">
+      <input [formControlName]="i" placeholder="Item {{ i + 1 }}" />
+      <button type="button" (click)="removeItem(i)">Remove</button>
+    </div>
+  </div>
+  <button type="button" (click)="addItem()">Add Item</button>
+  <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>
+<div *ngIf="submittedItems.length">
+  <h3>Submitted Items:</h3>
+  <ul>
+    <li *ngFor="let item of submittedItems">{{ item }}</li>
+  </ul>
+</div>
