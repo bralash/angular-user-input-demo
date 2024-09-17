@@ -1,1 +1,7 @@
-<p>view-content-child works!</p>
+<h3>ViewChild Example</h3>
+<input type="text" #viewChildInput>
+<button (click)="focusViewChildInput()">Focus ViewChild Input</button>
+
+<h3>ContentChild Example</h3>
+<ng-content></ng-content>
+<button (click)="focusContentChildInput()">Focus ContentChild Input</button>
