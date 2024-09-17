@@ -74,7 +74,7 @@ main {
   grid-column: 2;
   grid-row: 2;
   padding: 2rem;
-  margin-top: 0px;
+  margin-top: $header-height;
   overflow-y: auto;
   margin-left: 10px;
 }
@@ -97,13 +97,13 @@ section {
 }
 
 // Footer
-footer {
-  grid-column: 1 / -1;
-  background-color: $primary-color;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
+// footer {
+//   grid-column: 1 / -1;
+//   background-color: $primary-color;
+//   color: white;
+//   text-align: center;
+//   padding: 1rem;
+// }
 
 @media (max-width: 768px) {
   .app-container {
