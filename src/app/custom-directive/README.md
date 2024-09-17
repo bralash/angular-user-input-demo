@@ -1,0 +1,2 @@
+# Custom Directive
+This example includes a custom `HighlightDirective` that changes the background color of an element when hovered over, demonstrating how to create and use custom directives in Angular.
