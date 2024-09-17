@@ -1,1 +1,4 @@
-<p>change-detection works!</p>
+<button (click)="updateData()">Update Data</button>
+<button (click)="updateObject()">Update Object</button>
+<app-child [data]="data"></app-child>
+<app-child [data]="obj.value"></app-child>

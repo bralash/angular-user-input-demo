@@ -49,6 +49,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-right: 0.5rem;
 
   &:hover {
     background-color: darken($primary-color, 10%);
