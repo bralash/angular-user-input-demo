@@ -1,1 +1,5 @@
-<p>async-operations works!</p>
+<button (click)="loadData()">Load Data</button>
+<p *ngIf="data$ | async as data; else loading">
+    Data: {{ data }}
+</p>
+<ng-template #loading>Loading...</ng-template>
